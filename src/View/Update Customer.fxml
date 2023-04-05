@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="customerId2" layoutX="192.0" layoutY="80.0" text="Customer ID" />
+      <Label fx:id="customerName2" layoutX="294.0" layoutY="136.0" prefHeight="17.0" prefWidth="43.0" text="Name" />
+      <Label fx:id="customerAddress2" layoutX="294.0" layoutY="174.0" text="Address" />
+      <Label fx:id="postalCode2" layoutX="297.0" layoutY="215.0" text="Postal Code" />
+      <Label fx:id="phoneNumber2" layoutX="297.0" layoutY="260.0" text="Phone Number" />
+      <ComboBox fx:id="firstLevelDivCombo2" layoutX="89.0" layoutY="158.0" onAction="#onFirstLevelDiv2" prefWidth="150.0" />
+      <Label fx:id="firstLevelDiv2" layoutX="111.0" layoutY="136.0" text="First - Level Division" />
+      <TextField fx:id="customerId2TF" editable="false" layoutX="275.0" layoutY="76.0" promptText="Auto Generated">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextArea layoutX="-403.0" layoutY="-163.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="customerName2TF" layoutX="400.0" layoutY="132.0" />
+      <TextField fx:id="customerAddress2TF" layoutX="400.0" layoutY="170.0" />
+      <TextField fx:id="postalCode2TF" layoutX="400.0" layoutY="211.0" />
+      <TextField fx:id="phoneNumber2TF" layoutX="400.0" layoutY="256.0" />
+      <TitledPane animated="false" prefHeight="26.0" prefWidth="600.0" text="Update Customer Record">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </TitledPane>
+      <Button fx:id="saveCustomer2" layoutX="356.0" layoutY="336.0" mnemonicParsing="false" onAction="#onSaveCustomer2" text="Save" />
+      <Button fx:id="cancelCustomer2" layoutX="430.0" layoutY="336.0" mnemonicParsing="false" onAction="#onCancelCustomer2" text="Cancel" />
+      <Label fx:id="customerCountry2" layoutX="150.0" layoutY="215.0" text="Country" />
+      <ComboBox fx:id="customerCountryCombo2" layoutX="89.0" layoutY="236.0" onAction="#onCustomerCountry2" prefWidth="150.0" />
+   </children>
+</AnchorPane>
